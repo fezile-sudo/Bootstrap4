@@ -47,10 +47,15 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                </div>
+                <!-- Button to Redirect to Reserve Table Section -->
+                  
+                    <div class="col-12 mt-5 mt-sm-0 col-sm-3 text-center align-self-center">
+                      <a href="#reservationModal" class="btn w-100 btn-warning text-black">Reserve table</a>
+                  </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 
     <div class="container">
@@ -85,6 +90,7 @@
             </div>
         </div>
 
+        
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last  col-md-3">
@@ -107,6 +113,63 @@
             </div>
            </div>
 
+ <div id="reservationModal" class="container my-5">
+        <!-- New content row for reservation form -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8"> <!-- 8 columns on medium to large screens, full width on extra-small screens -->
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Reserve a Table</h5>
+              </div>
+              <div class="card-body">
+                <form>
+                  <!-- Number of Guests -->
+                  <div class="mb-3">
+                    <label class="form-label">Number of Guests</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="numGuests" id="one_guest" value="1" checked>
+                      <label class="form-check-label" for="one_guest">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="numGuests" id="two_guests" value="2">
+                      <label class="form-check-label" for="two_guests">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="numGuests" id="three_guests" value="3">
+                      <label class="form-check-label" for="three_guests">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="numGuests" id="four_guests" value="4">
+                      <label class="form-check-label" for="four_guests">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="numGuests" id="five_guests" value="5">
+                      <label class="form-check-label" for="five_guests">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="numGuests" id="six_guests" value="6">
+                      <label class="form-check-label" for="six_guests">6</label>
+                    </div>
+                  </div>
+      
+                  <!-- Date and Time of Reservation -->
+                  <div class="mb-3">
+                    <label for="reservationDate" class="form-label">Reservation Date</label>
+                    <input type="date" class="form-control" id="reservationDate" placeholder="Select a date">
+                  </div>
+                  <div class="mb-3">
+                    <label for="reservationTime" class="form-label">Reservation Time</label>
+                    <input type="time" class="form-control" id="reservationTime" placeholder="Select a time">
+                  </div>
+
+                  <!-- Reserve Button -->
+                  <a class="btn btn-primary">Reserve</a> <!-- Redirects to another page -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer class="footer">
          <div class="container">
